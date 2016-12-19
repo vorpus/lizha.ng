@@ -1,0 +1,31 @@
+.logos i {
+  font-size: 88px;
+  text-align: center;
+}
+
+.logos i {
+  line-height: 128px;
+}
+
+.col-4 {
+  overflow: hidden;
+}
+
+.demo-image {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left -50px center;
+}
+
+.demo-image.acebook{
+  background-image: url('../img/fb-demo2.png');
+}
+
+.demo-image.jsgame{
+  background-image: url('../img/fb-demo.png');
+}
+
+.demo-image.intensive{
+  background-image: url('../img/fb-demo.png');
+}
