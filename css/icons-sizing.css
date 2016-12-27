@@ -52,3 +52,11 @@
 .demo-image.intensive{
   background-image: url('../img/js-demo.png');
 }
+
+.demo-image.sims0{
+  background-image: url('../img/life-demo.png');
+}
+
+.demo-image.architect{
+  background-image: url('../img/architect.png');
+}
