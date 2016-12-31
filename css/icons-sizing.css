@@ -60,3 +60,7 @@
 .demo-image.architect{
   background-image: url('../img/architect.png');
 }
+
+.demo-image.emoji{
+  background-image: url('../img/emoji.png');
+}
