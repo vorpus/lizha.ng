@@ -16,7 +16,20 @@
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
-    <script src="lib/main.js" charset="utf-8"></script>
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-7671532-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script src="lib/main.js" charset="utf-8"></script>
+
   </head>
   <body>
     <header class="header">
@@ -44,9 +57,9 @@
 
       <div class="container-sml">
         <div class="col-12 text-center">
-          <a href="mailto:li3zhang@gmail.com" class="icon-link" target="_blank"><span class="socicon socicon-mail"></span></a>
-          <a href="https://github.com/vorpus" class="icon-link" target="_blank"><span class="socicon socicon-github"></span></a>
-          <a href="https://www.linkedin.com/in/zhangio" class="icon-link" target="_blank"><span class="socicon socicon-linkedin"></span></a>
+          <a href="mailto:li3zhang@gmail.com" class="icon-link" target="_blank" onclick="trackOutboundLink('mailto:li3zhang@gmail.com'); return false;"><span class="socicon socicon-mail"></span></a>
+          <a href="https://github.com/vorpus" class="icon-link" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus'); return false;"><span class="socicon socicon-github"></span></a>
+          <a href="https://www.linkedin.com/in/zhangio" class="icon-link" target="_blank" onclick="trackOutboundLink('https://www.linkedin.com/in/zhangio'); return false;"><span class="socicon socicon-linkedin"></span></a>
 
           <h2 class="paragraph">
             Armed with an engineering degree from The University of Texas at Austin and a passion for data and analytics.
@@ -90,7 +103,8 @@
           </p>
           <br />
           <p class="paragraph">
-            <a href="http://www.theacebook.org" target="_blank">Live</a> | <a href="https://github.com/vorpus/acebook#acebook" target="_blank">Source</a>
+            <a href="http://www.theacebook.org" target="_blank" onclick="trackOutboundLink('http://www.theacebook.org'); return false;">Live</a> |
+            <a href="https://github.com/vorpus/acebook#acebook" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus/acebook'); return false;">Source</a>
           </p>
         </div>
         <div class="col-4">
@@ -106,10 +120,113 @@
           </p>
           <br />
           <p class="paragraph">
-            <a href="https://vorpus.github.io/PicassoJS/" target="_blank">Live</a> | <a href="https://github.com/vorpus/PicassoJS" target="_blank">Source</a>
+            <a href="https://vorpus.github.io/PicassoJS/" target="_blank" onclick="trackOutboundLink('https://vorpus.github.io/PicassoJS/'); return false;">Live</a> |
+            <a href="https://github.com/vorpus/PicassoJS" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus/PicassoJS'); return false;">Source</a>
           </p>
         </div>
         <div class="col-4">
+          <b class="emoji">
+            <div class="demo-image architect">
+            </div>
+          </b>
+          <h3 class="subheading">
+            Architect
+          </h3>
+          <p class="paragraph">
+            A demonstration of a depth-first maze generating algorithm created using HTML5 Canvas and jQuery.
+          </p>
+          <br />
+          <p class="paragraph">
+            <a href="https://vorpus.github.io/architect/" target="_blank" onclick="trackOutboundLink('https://vorpus.github.io/architect/'); return false;">Live</a> |
+            <a href="https://github.com/vorpus/architect/" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus/architect/'); return false;">Source</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="view-more-button view-more-1">
+        VIEW 3 MORE
+      </div>
+
+      <div class="more-projects more-proj-1 container-lrg hidden flex">
+        <div class="col-4">
+          <b class="emoji">
+            <div class="demo-image emoji">
+            </div>
+          </b>
+          <h3 class="subheading">
+            Emoji Racer
+          </h3>
+          <p class="paragraph">
+            Online multiplayer game to test your knowledge of the Emoji keyboard! Created with jQuery and Socket.io
+          </p>
+          <br />
+          <p class="paragraph">
+            <a href="https://emojiracer.herokuapp.com/" target="_blank" onclick="trackOutboundLink('https://emojiracer.herokuapp.com/'); return false;">Live</a> |
+            <a href="https://github.com/vorpus/EmojiRacer" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus/EmojiRacer'); return false;">Source</a>
+          </p>
+        </div>
+
+        <div class="col-4">
+          <b class="emoji">
+            <div class="demo-image intensive">
+            </div>
+          </b>
+          <h3 class="subheading">
+            docGhost
+          </h3>
+          <p class="paragraph">
+            A lightweight JavaScript library that allows users to manipulate DOM elements in a more succinct and intuitive way.
+          </p>
+          <br />
+          <p class="paragraph">
+            <a href="https://github.com/vorpus/docGhost" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus/docGhost'); return false;">Source</a>
+          </p>
+        </div>
+
+        <div class="col-4">
+          <b class="emoji">
+            <div class="demo-image sims0">
+            </div>
+          </b>
+          <h3 class="subheading">
+            The Sims v0
+          </h3>
+          <p class="paragraph">
+            A JavaScript implementation of Conway's Game of Life with templates to help you get started!
+          </p>
+          <br />
+          <p class="paragraph">
+            <a href="https://vorpus.github.io/theSims0/" target="_blank" onclick="trackOutboundLink('https://vorpus.github.io/theSims0/'); return false;">Live</a> |
+            <a href="https://github.com/vorpus/theSims0" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus/theSims0'); return false;">Source</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="view-more-button view-more-2 hidden">
+        VIEW 1 MORE
+      </div>
+
+      <div class="more-projects more-proj-2 container-lrg hidden flex">
+        <div class="col-4">
+          <b class="emoji">
+            <div class="demo-image trees">
+            </div>
+          </b>
+          <h3 class="subheading">
+            BST JS
+          </h3>
+          <p class="paragraph">
+            JavaScript implementation of Binary Search Trees and an example of a self-balancing BST.
+          </p>
+          <br />
+          <p class="paragraph">
+            <a href="https://vorpus.github.io/TreeJS/" target="_blank" onclick="trackOutboundLink('https://vorpus.github.io/TreeJS/'); return false;">Live</a> |
+            <a href="https://github.com/vorpus/TreeJS" target="_blank" onclick="trackOutboundLink('https://github.com/vorpus/TreeJS'); return false;">Source</a>
+          </p>
+        </div>
+
+        <!-- <div class="col-4">
           <b class="emoji">
             <div class="demo-image intensive">
             </div>
@@ -125,13 +242,6 @@
             <a href="https://github.com/vorpus/docGhost" target="_blank">Source</a>
           </p>
         </div>
-      </div>
-
-      <div class="view-more-button">
-        VIEW 3 MORE
-      </div>
-
-      <div class="more-projects container-lrg hidden flex">
 
         <div class="col-4">
           <b class="emoji">
@@ -148,39 +258,8 @@
           <p class="paragraph">
             <a href="https://vorpus.github.io/theSims0/" target="_blank">Live</a> | <a href="https://github.com/vorpus/theSims0" target="_blank">Source</a>
           </p>
-        </div>
-        <div class="col-4">
-          <b class="emoji">
-            <div class="demo-image architect">
-            </div>
-          </b>
-          <h3 class="subheading">
-            Architect
-          </h3>
-          <p class="paragraph">
-            A demonstration of a depth-first maze generating algorithm created using HTML5 Canvas and jQuery.
-          </p>
-          <br />
-          <p class="paragraph">
-            <a href="https://vorpus.github.io/architect/" target="_blank">Live</a> | <a href="https://github.com/vorpus/architect/" target="_blank">Source</a>
-          </p>
-        </div>
-        <div class="col-4">
-          <b class="emoji">
-            <div class="demo-image emoji">
-            </div>
-          </b>
-          <h3 class="subheading">
-            Emoji Racer
-          </h3>
-          <p class="paragraph">
-            Online multiplayer game to test your knowledge of the Emoji keyboard! Created with jQuery and Socket.io
-          </p>
-          <br />
-          <p class="paragraph">
-            <a href="https://emojiracer.herokuapp.com/" target="_blank">Live</a> | <a href="https://github.com/vorpus/EmojiRacer" target="_blank">Source</a>
-          </p>
-        </div>
+        </div> -->
+
       </div>
     </div>
     <div class="feature6">
@@ -190,11 +269,15 @@
             When I'm not coding...
           </h3>
           <p class="paragraph">
-            <b>I write</b> I'm an editor for a young professionals publication. In my favorite article I worked on, we interviewed the <a href="https://www.spe.org/en/twa/twa-article-detail/?art=2432" target="_blank">CTO of NASA's Johnson Space Center</a>!
+            <b>I write</b> I'm an editor for a young professionals publication.
+            In my favorite article I worked on, we interviewed the
+            <a href="https://www.spe.org/en/twa/twa-article-detail/?art=2432" target="_blank" onclick="trackOutboundLink('https://www.spe.org/'); return false;">CTO of NASA's Johnson Space Center</a>!
           </p>
           <br/>
           <p class="paragraph">
-            <b>I explore</b> I learn new and interesting topics by taking MOC's on Coursera or KhanAcademy. The last class I finished was UCSD's <a href="https://www.coursera.org/learn/algorithmic-toolbox" target="_blank">Algorithmic Toolbox</a>.
+            <b>I explore</b> I learn new and interesting topics by taking
+            MOC's on Coursera or KhanAcademy. The last class I finished was
+            UCSD's <a href="https://www.coursera.org/learn/algorithmic-toolbox" target="_blank" onclick="trackOutboundLink('https://www.coursera.org/'); return false;">Algorithmic Toolbox</a>.
           </p>
           <p class="paragraph">
 
@@ -231,10 +314,10 @@
             Get in touch!
           </h3>
           <div class="ctas">
-            <a class="ctas-button" href="mailto:li3zhang@gmail.com">
+            <a class="ctas-button" href="mailto:li3zhang@gmail.com" onclick="trackOutboundLink('mailto:li3zhang@gmail.com'); return false;">
               Email
             </a>
-            <a class="ctas-button-2" href="https://www.linkedin.com/in/zhangio" target="_blank">
+            <a class="ctas-button-2" href="https://www.linkedin.com/in/zhangio" target="_blank" onclick="trackOutboundLink('https://www.linkedin.com/in/zhangio'); return false;">
               Linkedin
             </a>
           </div>
@@ -267,13 +350,13 @@
           <a class="nav-link2">
             (281) 777 - 6796
           </a>
-          <a class="nav-link2" href="https://github.com/vorpus">
-            github.com/vorpus/lizha.ng
+          <a class="nav-link2" href="https://github.com/vorpus" onclick="trackOutboundLink('https://github.com/vorpus'); return false;">
+            github.com/vorpus/
           </a>
-          <a class="nav-link2" href="https://www.linkedin.com/in/zhangio">
+          <a class="nav-link2" href="https://www.linkedin.com/in/zhangio" onclick="trackOutboundLink('https://www.linkedin.com/in/zhangio'); return false;">
             linkedin.com/in/zhangio
           </a>
-          <a class="nav-link2" href="https://angel.co/lizhang">
+          <a class="nav-link2" href="https://angel.co/lizhang" onclick="trackOutboundLink('https://angel.co/lizhang'); return false;">
             angel.co/lizhang
           </a>
         </div>

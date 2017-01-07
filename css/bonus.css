@@ -17,6 +17,10 @@
   background: #b672ba;
 }
 
+.view-more-button.hidden {
+  display: none;
+}
+
 .hidden-button {
   display: none;
 }
@@ -29,6 +33,10 @@
   overflow: hidden;
   max-height: 1500px;
   transition: max-height 1s;
+  margin-bottom: 30px;
+}
+
+.even-more-projects {
   margin-bottom: 30px;
 }
 
